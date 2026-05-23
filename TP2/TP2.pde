@@ -279,6 +279,7 @@ void draw(){
    fill(0); 
     textAlign(CENTER, CENTER);
     text("RESET", 280,295, 70, 50);
+    fill(0, 0, 0, 150);
     rect(rectX6, 30, 350, 140);
     if (rectX6 < 30){
       rectX6 = rectX6 +4;
