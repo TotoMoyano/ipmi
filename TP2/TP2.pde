@@ -27,6 +27,7 @@ float rectX2;
 float rectX3;
 float rectX4;
 float rectX5;
+float rectX6;
 PFont miFuente;
 int pantalla = 1;
 PFont font;
@@ -83,7 +84,8 @@ void setup(){
   rectX3 = -350;
   rectX4 = -350;
   rectX5 = -350;
-  font = createFont ("SansSerif", 16);
+  rectX6 = -350;
+  font = createFont ("Arial", 16);
   textFont (font, 16);
   
 }
@@ -277,6 +279,14 @@ void draw(){
    fill(0); 
     textAlign(CENTER, CENTER);
     text("RESET", 280,295, 70, 50);
+    rect(rectX6, 30, 350, 140);
+    if (rectX6 < 30){
+      rectX6 = rectX6 +4;
+    }
+     fill (255);
+     stroke (70, 158, 104);
+     textAlign (LEFT);
+     text ("Tras una dura batalla, Tai y sus amigos lograron vencer al mal que amenazaba a ambos mundos. Con la paz restaurada, los Niños Elegidos finalmente pueden descansar y disfrutar de una vida feliz junto a sus compañeros Digimon.",rectX6,40,350,140);
 
    
    }
